@@ -1,0 +1,21 @@
+.work-bench{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    &_sider{
+        height: 100%;
+    }
+
+    &_sider .arco-layout-sider-children {
+        overflow: hidden;   /* 不让 Sider 内层滚 */
+        height: 100%;
+    }
+
+
+    &_content{
+        flex: 1;
+        display: flex;
+    }
+}
