@@ -1,3 +1,22 @@
 .message-composer{
     height: 100px;
+    display: flex;
+    flex-direction: column;
+
+    &_footer{
+        padding: 2px 2px;
+        height: 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &_input{
+        flex: 1;
+        min-width: 24px;
+        
+        padding: 5px 5px;
+        resize: none;
+        border: none;
+    }
 }

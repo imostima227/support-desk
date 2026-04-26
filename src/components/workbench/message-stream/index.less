@@ -1,27 +1,54 @@
 .messgae-stream{
     flex: 1;
-    overflow: hidden;
+    min-height: 200px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: #f7f8fa;
 
+    &_content{
+        width: 100%;
+    }
+
+    &_divider{
+       width: 100%;
+       text-align: center;
+       font-size: small;
+       color: #909399;
+    }
+
     &_wrapper{
         display: flex;
         width: 100%;
         align-items: center;
         padding: 5px 0;
+        text-align: left;
+    }
+
+    &_wrapper.system{
+        justify-content: center;
+    }
+
+    &_wrapper.customer{
+        justify-content: flex-end;
+    }
+
+    &_wrapper.agent{
+        justify-content: flex-start;
+    }
+
+    &_item{
+        padding: 8px 10px;
     }
 
     &_item.system{
-        justify-self: center;
         color: #909399;
     }
 
     &_item.customer{
         max-width: 70%;
-        justify-self: flex-end;
         background-color: #e0f7ff;
         color: #333333;
         border-radius: 16px;
@@ -29,10 +56,14 @@
     
     &_item.agent{
         max-width: 70%;
-        justify-self: flex-start;
         background-color: #ffffff;
         color: #333333;
         border-radius: 16px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
+}
+
+.messgae-stream::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }

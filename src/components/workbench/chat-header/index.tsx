@@ -12,10 +12,10 @@ function ChatHeader() {
             </div>
             <div className='chat-header_middle'>status</div>
             <div className='chat-header_right'>
-                <Button type='text'>Text</Button>
+                <Button type='text'>转工单</Button>
                 <Button type='primary' icon={<Power theme="outline" size="14" fill="#fff" style={{ paddingRight: 2}}/>}>
-        Delete
-      </Button>
+                    结束会话
+                </Button>
             </div>
         </div>
     )
