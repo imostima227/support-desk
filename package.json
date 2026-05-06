@@ -12,6 +12,7 @@
   "dependencies": {
     "@arco-design/web-react": "^2.66.14",
     "@icon-park/react": "^1.4.2",
+    "immer": "^11.1.4",
     "less": "^4.6.4",
     "less-loader": "^12.3.2",
     "react": "^19.2.5",
